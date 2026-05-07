@@ -751,7 +751,7 @@ FOOTER
 position:relative;
 
 padding:
-160px 24px 100px;
+140px 24px 80px;
 
 overflow:hidden;
 
@@ -769,7 +769,7 @@ ORBIT WRAPPER
 
 position:relative;
 
-width:min(900px,100%);
+width:900px;
 height:900px;
 
 margin:auto;
@@ -909,12 +909,9 @@ border-radius:50%;
 text-decoration:none;
 
 transition:
-transform 0.5s ease,
-filter 0.5s ease;
+transform 0.5s ease;
 
 transform-style:preserve-3d;
-
-will-change:transform;
 
 }
 
@@ -924,7 +921,7 @@ transform:
 scale(1.12)
 translateZ(80px);
 
-z-index:20;
+z-index:10;
 
 }
 
@@ -1096,7 +1093,7 @@ position:relative;
 width:100%;
 
 padding:
-90px 24px 60px;
+70px 24px 50px;
 
 background:
 linear-gradient(
@@ -1145,7 +1142,7 @@ margin:auto;
 display:flex;
 flex-direction:column;
 
-gap:48px;
+gap:40px;
 
 z-index:2;
 
@@ -1199,24 +1196,37 @@ max-width:700px;
 
 }
 
+/* =========================================================
+RESPONSIVE SOCIAL LINKS
+========================================================= */
+
 .social-grid{
 
-display:grid;
+display:flex;
+
+flex-wrap:wrap;
 
 gap:14px;
+
+align-items:center;
 
 }
 
 .social-link{
+
+flex:1 1 180px;
+
+min-width:180px;
+max-width:220px;
 
 display:flex;
 
 justify-content:space-between;
 align-items:center;
 
-padding:18px 22px;
+padding:16px 18px;
 
-border-radius:22px;
+border-radius:18px;
 
 text-decoration:none;
 
@@ -1262,7 +1272,7 @@ gap:24px;
 
 flex-wrap:wrap;
 
-padding-top:28px;
+padding-top:24px;
 
 border-top:
 1px solid rgba(255,255,255,0.08);
@@ -1303,6 +1313,11 @@ grid-template-columns:1fr;
 .footer-bottom{
 flex-direction:column;
 align-items:flex-start;
+}
+
+.social-link{
+flex:1 1 100%;
+max-width:100%;
 }
 
 }
@@ -1444,11 +1459,14 @@ placeholder="Search runtime territories...">
 <section class="runtime-territory active" id="home">
 
 <h1 class="aurora-title">
+
 HTML CONTROL
 <br>
+
 <span class="gradient">
 NEST
 </span>
+
 </h1>
 
 <p class="aurora-subtitle">
@@ -1465,18 +1483,39 @@ inside one deployable HTML organism.
 <div class="aurora-grid">
 
 <div class="aurora-card">
-<h3>Runtime Infrastructure</h3>
-<p>Persistent sovereign browser runtime systems.</p>
+
+<h3>
+Runtime Infrastructure
+</h3>
+
+<p>
+Persistent sovereign browser runtime systems.
+</p>
+
 </div>
 
 <div class="aurora-card">
-<h3>Distributed Ecosystems</h3>
-<p>Connected operational territories.</p>
+
+<h3>
+Distributed Ecosystems
+</h3>
+
+<p>
+Connected operational territories.
+</p>
+
 </div>
 
 <div class="aurora-card">
-<h3>AI Runtime Integration</h3>
-<p>Embedded orchestration environments.</p>
+
+<h3>
+AI Runtime Integration
+</h3>
+
+<p>
+Embedded orchestration environments.
+</p>
+
 </div>
 
 </div>
@@ -1551,63 +1590,123 @@ RUNTIME
 <div class="orbit-ring ring-two"></div>
 
 <div class="center-core">
-<h2>NEST CORE</h2>
+
+<h2>
+NEST CORE
+</h2>
+
 </div>
 
 <a href="https://github.com" class="bubble github">
+
 <div class="bubble-inner">
+
 <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
-<span>GitHub</span>
+
+<span>
+GitHub
+</span>
+
 </div>
+
 </a>
 
 <a href="https://youtube.com" class="bubble youtube">
+
 <div class="bubble-inner">
+
 <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
-<span>YouTube</span>
+
+<span>
+YouTube
+</span>
+
 </div>
+
 </a>
 
 <a href="https://instagram.com" class="bubble instagram">
+
 <div class="bubble-inner">
+
 <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
-<span>Instagram</span>
+
+<span>
+Instagram
+</span>
+
 </div>
+
 </a>
 
 <a href="https://linkedin.com" class="bubble linkedin">
+
 <div class="bubble-inner">
+
 <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png">
-<span>LinkedIn</span>
+
+<span>
+LinkedIn
+</span>
+
 </div>
+
 </a>
 
 <a href="https://x.com" class="bubble xplatform">
+
 <div class="bubble-inner">
+
 <img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png">
-<span>X</span>
+
+<span>
+X
+</span>
+
 </div>
+
 </a>
 
 <a href="https://substack.com" class="bubble substack">
+
 <div class="bubble-inner">
+
 <img src="https://cdn-icons-png.flaticon.com/512/5968/5968885.png">
-<span>Substack</span>
+
+<span>
+Substack
+</span>
+
 </div>
+
 </a>
 
 <a href="#" class="bubble drive">
+
 <div class="bubble-inner">
+
 <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png">
-<span>Drive</span>
+
+<span>
+Drive
+</span>
+
 </div>
+
 </a>
 
 <a href="#" class="bubble ai">
+
 <div class="bubble-inner">
+
 <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
-<span>AI Runtime</span>
+
+<span>
+AI Runtime
+</span>
+
 </div>
+
 </a>
 
 </div>
@@ -1786,9 +1885,13 @@ document.getElementById('auroraHeader');
 window.addEventListener('scroll', () => {
 
 if(window.scrollY > 40){
+
 auroraHeader.classList.add('scrolled');
+
 }else{
+
 auroraHeader.classList.remove('scrolled');
+
 }
 
 });
