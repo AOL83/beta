@@ -76,16 +76,26 @@ HEADER
 ========================================================= */
 
 .aurora-header{
+
 position:fixed;
 top:0;
 left:0;
+
 width:100%;
 height:76px;
-background:rgba(0,0,0,0.35);
+
+background:
+rgba(0,0,0,0.35);
+
 backdrop-filter:blur(20px);
-border-bottom:1px solid rgba(182,255,0,0.12);
+
+border-bottom:
+1px solid rgba(182,255,0,0.12);
+
 z-index:9999;
+
 transition:0.3s;
+
 }
 
 .aurora-header.scrolled{
@@ -93,12 +103,17 @@ background:rgba(0,0,0,0.85);
 }
 
 .aurora-nav-shell{
+
 width:min(100% - 2rem,1500px);
+
 height:100%;
+
 margin:auto;
+
 display:flex;
 align-items:center;
 justify-content:space-between;
+
 }
 
 /* =========================================================
@@ -106,40 +121,73 @@ LOGO
 ========================================================= */
 
 .aurora-brand{
+
 display:flex;
 align-items:center;
+
 gap:14px;
+
 text-decoration:none;
+
 color:white;
+
 }
 
 .aurora-brand-mark{
+
 width:52px;
 height:52px;
+
 border-radius:18px;
+
 display:grid;
 place-items:center;
-background:linear-gradient(135deg,#b6ff00,#ffe600,#ff5500);
+
+background:
+linear-gradient(
+135deg,
+#b6ff00,
+#ffe600,
+#ff5500
+);
+
 color:black;
+
 font-weight:900;
+
 font-size:1.2rem;
-box-shadow:0 0 30px rgba(182,255,0,0.3);
+
+box-shadow:
+0 0 30px rgba(182,255,0,0.3);
+
 }
 
 .aurora-brand-title{
+
 display:block;
+
 font-size:1rem;
+
 font-weight:900;
+
 letter-spacing:-0.03em;
+
 }
 
 .aurora-brand-subtitle{
+
 display:block;
+
 margin-top:2px;
+
 font-size:0.68rem;
+
 letter-spacing:0.18em;
+
 text-transform:uppercase;
+
 color:#9ba5b4;
+
 }
 
 /* =========================================================
@@ -147,26 +195,47 @@ DESKTOP NAV
 ========================================================= */
 
 .aurora-desktop-nav{
+
 display:flex;
 gap:12px;
+
 }
 
 .aurora-desktop-nav button{
+
 padding:12px 18px;
+
 border-radius:999px;
-border:1px solid rgba(182,255,0,0.12);
-background:rgba(255,255,255,0.04);
+
+border:
+1px solid rgba(182,255,0,0.12);
+
+background:
+rgba(255,255,255,0.04);
+
 color:white;
+
 font-weight:700;
+
 cursor:pointer;
+
 transition:0.3s;
+
 }
 
 .aurora-desktop-nav button:hover{
+
 transform:translateY(-2px);
-background:rgba(182,255,0,0.12);
-border-color:rgba(182,255,0,0.45);
-box-shadow:0 0 24px rgba(182,255,0,0.12);
+
+background:
+rgba(182,255,0,0.12);
+
+border-color:
+rgba(182,255,0,0.45);
+
+box-shadow:
+0 0 24px rgba(182,255,0,0.12);
+
 }
 
 /* =========================================================
@@ -174,47 +243,84 @@ ADVANCED HAMBURGER
 ========================================================= */
 
 .aurora-menu-toggle{
+
 width:56px;
 height:56px;
+
 border-radius:18px;
-border:1px solid rgba(182,255,0,0.16);
-background:rgba(255,255,255,0.05);
+
+border:
+1px solid rgba(182,255,0,0.16);
+
+background:
+rgba(255,255,255,0.05);
+
 display:flex;
 justify-content:center;
 align-items:center;
+
 cursor:pointer;
+
 transition:0.3s;
+
 }
 
 .aurora-menu-toggle:hover{
-background:rgba(182,255,0,0.1);
-box-shadow:0 0 30px rgba(182,255,0,0.2);
+
+background:
+rgba(182,255,0,0.1);
+
+box-shadow:
+0 0 30px rgba(182,255,0,0.2);
+
 }
 
 .aurora-hamburger{
+
 position:relative;
+
 width:24px;
 height:18px;
+
 }
 
 .aurora-hamburger span{
+
 position:absolute;
+
 left:0;
+
 width:100%;
 height:2px;
+
 background:#b6ff00;
+
 border-radius:999px;
-box-shadow:0 0 10px #b6ff00;
+
+box-shadow:
+0 0 10px #b6ff00;
+
 transition:0.3s;
+
 }
 
-.aurora-hamburger span:nth-child(1){top:0;}
-.aurora-hamburger span:nth-child(2){top:8px;}
-.aurora-hamburger span:nth-child(3){top:16px;}
+.aurora-hamburger span:nth-child(1){
+top:0;
+}
+
+.aurora-hamburger span:nth-child(2){
+top:8px;
+}
+
+.aurora-hamburger span:nth-child(3){
+top:16px;
+}
 
 .aurora-menu-toggle.active .aurora-hamburger span:nth-child(1){
+
 top:8px;
 transform:rotate(45deg);
+
 }
 
 .aurora-menu-toggle.active .aurora-hamburger span:nth-child(2){
@@ -222,8 +328,10 @@ opacity:0;
 }
 
 .aurora-menu-toggle.active .aurora-hamburger span:nth-child(3){
+
 top:8px;
 transform:rotate(-45deg);
+
 }
 
 /* =========================================================
@@ -231,24 +339,64 @@ RUNTIME DRAWER
 ========================================================= */
 
 .aurora-drawer{
+
 position:fixed;
+
 top:76px;
 right:-430px;
+
 width:420px;
 height:calc(100vh - 76px);
-background:linear-gradient(180deg,rgba(8,8,8,0.96),rgba(0,0,0,0.98));
+
+background:
+linear-gradient(
+180deg,
+rgba(8,8,8,0.96),
+rgba(0,0,0,0.98)
+);
+
 backdrop-filter:blur(30px);
-border-left:1px solid rgba(182,255,0,0.16);
-box-shadow:-20px 0 80px rgba(0,0,0,0.6);
-transition:0.35s cubic-bezier(.2,.9,.2,1);
+
+border-left:
+1px solid rgba(182,255,0,0.16);
+
+box-shadow:
+-20px 0 80px rgba(0,0,0,0.6);
+
+transition:
+0.35s cubic-bezier(.2,.9,.2,1);
+
 z-index:9998;
+
 overflow:hidden;
+
 display:flex;
 flex-direction:column;
+
 }
 
 .aurora-drawer.active{
 right:0;
+}
+
+.aurora-drawer::before{
+
+content:'';
+
+position:absolute;
+inset:0;
+
+background:
+radial-gradient(circle at top right,
+rgba(182,255,0,0.18),
+transparent 35%),
+
+radial-gradient(circle at bottom left,
+rgba(255,230,0,0.12),
+transparent 35%);
+
+pointer-events:none;
+
 }
 
 /* =========================================================
@@ -256,39 +404,99 @@ DRAWER HEADER
 ========================================================= */
 
 .aurora-drawer-head{
+
 padding:24px;
-border-bottom:1px solid rgba(182,255,0,0.12);
+
+border-bottom:
+1px solid rgba(182,255,0,0.12);
+
 }
 
 .aurora-drawer-kicker{
+
 font-size:0.7rem;
+
 letter-spacing:0.18em;
+
 text-transform:uppercase;
+
 font-weight:900;
+
 color:#b6ff00;
+
+text-shadow:
+0 0 10px #b6ff00;
+
 }
 
 .aurora-drawer-title{
+
 margin-top:10px;
+
 font-size:1.5rem;
+
 font-weight:900;
+
 }
 
 .aurora-nav-search{
+
 width:100%;
+
 margin-top:18px;
+
 padding:14px 16px;
+
 border-radius:16px;
-border:1px solid rgba(182,255,0,0.14);
-background:rgba(255,255,255,0.04);
+
+border:
+1px solid rgba(182,255,0,0.14);
+
+background:
+rgba(255,255,255,0.04);
+
 color:white;
+
 outline:none;
+
+transition:0.3s;
+
 }
 
+.aurora-nav-search:focus{
+
+border-color:#b6ff00;
+
+box-shadow:
+0 0 0 4px rgba(182,255,0,0.08);
+
+}
+
+/* =========================================================
+DRAWER SCROLL
+========================================================= */
+
 .aurora-drawer-scroll{
+
 flex:1;
+
 overflow-y:auto;
+
 padding:18px;
+
+}
+
+.aurora-drawer-scroll::-webkit-scrollbar{
+width:8px;
+}
+
+.aurora-drawer-scroll::-webkit-scrollbar-thumb{
+
+background:
+linear-gradient(#b6ff00,#ffe600);
+
+border-radius:999px;
+
 }
 
 /* =========================================================
@@ -301,36 +509,63 @@ gap:10px;
 }
 
 .aurora-nav-link{
+
 display:grid;
+
 grid-template-columns:auto 1fr auto;
+
 gap:14px;
+
 align-items:center;
+
 padding:14px;
+
 border-radius:20px;
-background:rgba(255,255,255,0.04);
-border:1px solid rgba(255,255,255,0.06);
+
+background:
+rgba(255,255,255,0.04);
+
+border:
+1px solid rgba(255,255,255,0.06);
+
 cursor:pointer;
+
 transition:0.25s;
+
 }
 
 .aurora-nav-link:hover{
+
 transform:translateX(-4px);
-background:rgba(182,255,0,0.08);
-border-color:rgba(182,255,0,0.45);
-box-shadow:0 0 24px rgba(182,255,0,0.12);
+
+background:
+rgba(182,255,0,0.08);
+
+border-color:
+rgba(182,255,0,0.45);
+
+box-shadow:
+0 0 24px rgba(182,255,0,0.12);
+
 }
 
 .aurora-nav-icon{
+
 width:44px;
 height:44px;
+
 border-radius:14px;
+
 display:grid;
 place-items:center;
-background:linear-gradient(
+
+background:
+linear-gradient(
 135deg,
 rgba(182,255,0,0.18),
 rgba(255,230,0,0.08)
 );
+
 }
 
 /* =========================================================
@@ -338,15 +573,22 @@ PAGE SYSTEM
 ========================================================= */
 
 .runtime-territory{
+
 display:none;
+
 padding-top:150px;
 padding-left:24px;
 padding-right:24px;
 padding-bottom:120px;
+
 max-width:1500px;
+
 margin:auto;
+
 min-height:100vh;
+
 animation:fadeIn 0.4s ease;
+
 }
 
 .runtime-territory.active{
@@ -354,14 +596,17 @@ display:block;
 }
 
 @keyframes fadeIn{
+
 from{
 opacity:0;
 transform:translateY(20px);
 }
+
 to{
 opacity:1;
 transform:translateY(0);
 }
+
 }
 
 /* =========================================================
@@ -369,24 +614,44 @@ TITLES
 ========================================================= */
 
 .aurora-title{
+
 font-size:clamp(3rem,10vw,7rem);
+
 line-height:0.9;
+
 letter-spacing:-0.06em;
+
 margin-bottom:24px;
+
 }
 
 .gradient{
-background:linear-gradient(135deg,#ffffff,#b6ff00,#ffe600);
+
+background:
+linear-gradient(
+135deg,
+#ffffff,
+#b6ff00,
+#ffe600
+);
+
 -webkit-background-clip:text;
 color:transparent;
+
 }
 
 .aurora-subtitle{
+
 max-width:760px;
+
 line-height:1.8;
+
 font-size:1.1rem;
+
 color:#aab3c0;
+
 margin-bottom:60px;
+
 }
 
 /* =========================================================
@@ -394,9 +659,14 @@ GRID
 ========================================================= */
 
 .aurora-grid{
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
 gap:24px;
+
 }
 
 /* =========================================================
@@ -404,30 +674,72 @@ CARDS
 ========================================================= */
 
 .aurora-card{
+
 padding:34px;
+
 border-radius:28px;
-background:rgba(255,255,255,0.04);
-border:1px solid rgba(182,255,0,0.08);
+
+background:
+rgba(255,255,255,0.04);
+
+border:
+1px solid rgba(182,255,0,0.08);
+
 backdrop-filter:blur(20px);
+
 transition:0.3s;
+
 position:relative;
+
 overflow:hidden;
+
+}
+
+.aurora-card::before{
+
+content:'';
+
+position:absolute;
+inset:0;
+
+background:
+linear-gradient(
+145deg,
+rgba(255,255,255,0.08),
+transparent 40%
+);
+
+pointer-events:none;
+
 }
 
 .aurora-card:hover{
-transform:translateY(-8px);
-border-color:rgba(182,255,0,0.4);
-box-shadow:0 0 34px rgba(182,255,0,0.12);
+
+transform:
+translateY(-8px);
+
+border-color:
+rgba(182,255,0,0.4);
+
+box-shadow:
+0 0 34px rgba(182,255,0,0.12);
+
 }
 
 .aurora-card h3{
+
 font-size:1.4rem;
+
 margin-bottom:18px;
+
 }
 
 .aurora-card p{
+
 line-height:1.8;
+
 color:#a5afbc;
+
 }
 
 /* =========================================================
@@ -435,9 +747,18 @@ FOOTER
 ========================================================= */
 
 .aurora-footer{
-padding:180px 24px 120px;
-overflow:hidden;
+
 position:relative;
+
+padding:
+160px 24px 100px;
+
+overflow:hidden;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
 }
 
 /* =========================================================
@@ -445,19 +766,36 @@ ORBIT WRAPPER
 ========================================================= */
 
 .orbit-wrapper{
+
 position:relative;
-width:900px;
+
+width:min(900px,100%);
 height:900px;
+
 margin:auto;
+
 perspective:2400px;
+
 transform-style:preserve-3d;
+
 animation:orbitFloat 12s ease-in-out infinite;
+
 }
 
 @keyframes orbitFloat{
-0%{transform:rotateX(8deg) rotateY(-8deg);}
-50%{transform:rotateX(-8deg) rotateY(8deg);}
-100%{transform:rotateX(8deg) rotateY(-8deg);}
+
+0%{
+transform:rotateX(8deg) rotateY(-8deg);
+}
+
+50%{
+transform:rotateX(-8deg) rotateY(8deg);
+}
+
+100%{
+transform:rotateX(8deg) rotateY(-8deg);
+}
+
 }
 
 /* =========================================================
@@ -465,25 +803,38 @@ RINGS
 ========================================================= */
 
 .orbit-ring{
+
 position:absolute;
+
 border-radius:50%;
-border:1px solid rgba(182,255,0,0.15);
+
+border:
+1px solid rgba(182,255,0,0.15);
+
 }
 
 .ring-one{
+
 width:700px;
 height:700px;
+
 top:100px;
 left:100px;
+
 animation:spin 40s linear infinite;
+
 }
 
 .ring-two{
+
 width:520px;
 height:520px;
+
 top:190px;
 left:190px;
+
 animation:spinReverse 30s linear infinite;
+
 }
 
 @keyframes spin{
@@ -501,26 +852,45 @@ CENTER CORE
 ========================================================= */
 
 .center-core{
+
 position:absolute;
+
 width:280px;
 height:280px;
+
 top:310px;
 left:310px;
+
 border-radius:50%;
+
 display:flex;
 justify-content:center;
 align-items:center;
-background:radial-gradient(circle at top,#b6ff00 0%,#000 70%);
-border:2px solid rgba(182,255,0,0.2);
+
+background:
+radial-gradient(circle at top,
+#b6ff00 0%,
+#000 70%);
+
+border:
+2px solid rgba(182,255,0,0.2);
+
 box-shadow:
 0 0 120px rgba(182,255,0,0.35),
 inset 0 0 60px rgba(255,230,0,0.08);
-transform:translateZ(120px);
+
+transform:
+translateZ(120px);
+
 }
 
 .center-core h2{
+
 letter-spacing:8px;
-text-shadow:0 0 24px #b6ff00;
+
+text-shadow:
+0 0 24px #b6ff00;
+
 }
 
 /* =========================================================
@@ -528,59 +898,103 @@ text-shadow:0 0 24px #b6ff00;
 ========================================================= */
 
 .bubble{
+
 position:absolute;
+
 width:160px;
 height:160px;
+
 border-radius:50%;
+
 text-decoration:none;
-transition:0.5s;
+
+transition:
+transform 0.5s ease,
+filter 0.5s ease;
+
 transform-style:preserve-3d;
+
+will-change:transform;
+
 }
 
 .bubble:hover{
-transform:scale(1.14) translateZ(80px);
+
+transform:
+scale(1.12)
+translateZ(80px);
+
+z-index:20;
+
 }
 
 .bubble-inner{
+
 width:100%;
 height:100%;
+
 border-radius:50%;
+
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
+
 backdrop-filter:blur(20px);
+
 position:relative;
+
 overflow:hidden;
-border:1px solid rgba(255,255,255,0.15);
+
+border:
+1px solid rgba(255,255,255,0.15);
+
 }
 
 .bubble-inner::before{
+
 content:'';
+
 position:absolute;
 inset:0;
-background:linear-gradient(
+
+background:
+linear-gradient(
 145deg,
 rgba(255,255,255,0.35),
 transparent 55%
 );
+
 }
 
 .bubble img{
+
 width:68px;
 height:68px;
+
 object-fit:contain;
-filter:drop-shadow(0 0 15px rgba(255,255,255,0.8));
+
+filter:
+drop-shadow(0 0 15px rgba(255,255,255,0.8));
+
 z-index:2;
+
 }
 
 .bubble span{
+
 margin-top:12px;
+
 font-size:0.7rem;
+
 letter-spacing:2px;
+
 text-transform:uppercase;
+
 color:white;
+
 z-index:2;
+
 }
 
 /* =========================================================
@@ -631,109 +1045,232 @@ box-shadow:0 0 45px rgba(182,255,0,0.5);
 POSITIONS
 ========================================================= */
 
-.github{top:370px;right:0;}
-.youtube{bottom:90px;right:120px;}
-.instagram{bottom:90px;left:120px;}
-.linkedin{top:370px;left:0;}
-.drive{top:40px;left:160px;}
-.xplatform{top:40px;right:160px;}
-.substack{top:180px;left:40px;}
-.ai{top:180px;right:40px;}
+.github{
+top:370px;
+right:0;
+}
+
+.youtube{
+bottom:90px;
+right:120px;
+}
+
+.instagram{
+bottom:90px;
+left:120px;
+}
+
+.linkedin{
+top:370px;
+left:0;
+}
+
+.drive{
+top:40px;
+left:160px;
+}
+
+.xplatform{
+top:40px;
+right:160px;
+}
+
+.substack{
+top:180px;
+left:40px;
+}
+
+.ai{
+top:180px;
+right:40px;
+}
 
 /* =========================================================
 LEGAL FOOTER
 ========================================================= */
 
 .footer{
+
 position:relative;
+
 width:100%;
-padding:80px 24px 60px;
-background:linear-gradient(
+
+padding:
+90px 24px 60px;
+
+background:
+linear-gradient(
 180deg,
 rgba(0,0,0,0),
 rgba(0,0,0,0.92)
 );
-border-top:1px solid rgba(182,255,0,0.12);
+
+border-top:
+1px solid rgba(182,255,0,0.12);
+
 overflow:hidden;
+
 z-index:20;
+
+}
+
+.footer::before{
+
+content:'';
+
+position:absolute;
+inset:0;
+
+background:
+radial-gradient(circle at top left,
+rgba(182,255,0,0.08),
+transparent 35%),
+
+radial-gradient(circle at bottom right,
+rgba(255,230,0,0.06),
+transparent 35%);
+
+pointer-events:none;
+
 }
 
 .footer-inner{
+
 position:relative;
+
 width:min(100%,1400px);
+
 margin:auto;
+
 display:flex;
 flex-direction:column;
+
 gap:48px;
+
 z-index:2;
+
 }
 
 .footer-top{
+
 display:grid;
-grid-template-columns:1.2fr 1fr;
+
+grid-template-columns:
+1.2fr 1fr;
+
 gap:48px;
+
 align-items:start;
+
 }
 
 .footer-brand h2{
+
 font-size:2.2rem;
+
 line-height:1;
+
 letter-spacing:-0.04em;
+
 margin-bottom:18px;
-background:linear-gradient(
+
+background:
+linear-gradient(
 135deg,
 #ffffff,
 #b6ff00,
 #ffe600
 );
+
 -webkit-background-clip:text;
 color:transparent;
+
 }
 
 .footer-brand p{
+
 line-height:1.8;
+
 font-size:1rem;
+
 color:#aab3c0;
+
 max-width:700px;
+
 }
 
 .social-grid{
+
 display:grid;
+
 gap:14px;
+
 }
 
 .social-link{
+
 display:flex;
+
 justify-content:space-between;
 align-items:center;
+
 padding:18px 22px;
+
 border-radius:22px;
+
 text-decoration:none;
-background:rgba(255,255,255,0.04);
-border:1px solid rgba(255,255,255,0.06);
+
+background:
+rgba(255,255,255,0.04);
+
+border:
+1px solid rgba(255,255,255,0.06);
+
 color:white;
+
 font-weight:700;
+
 transition:0.3s;
+
 backdrop-filter:blur(20px);
+
 }
 
 .social-link:hover{
+
 transform:translateY(-4px);
-background:rgba(182,255,0,0.08);
-border-color:rgba(182,255,0,0.45);
-box-shadow:0 0 28px rgba(182,255,0,0.14);
+
+background:
+rgba(182,255,0,0.08);
+
+border-color:
+rgba(182,255,0,0.45);
+
+box-shadow:
+0 0 28px rgba(182,255,0,0.14);
+
 }
 
 .footer-bottom{
+
 display:flex;
+
 justify-content:space-between;
 align-items:center;
+
 gap:24px;
+
 flex-wrap:wrap;
+
 padding-top:28px;
-border-top:1px solid rgba(255,255,255,0.08);
+
+border-top:
+1px solid rgba(255,255,255,0.08);
+
 font-size:0.9rem;
+
 color:#8f98a6;
+
 }
 
 /* =========================================================
@@ -880,6 +1417,24 @@ placeholder="Search runtime territories...">
 <div>↗</div>
 </div>
 
+<div class="aurora-nav-link" data-page="modules">
+<div class="aurora-nav-icon">🧩</div>
+<div>Modules</div>
+<div>↗</div>
+</div>
+
+<div class="aurora-nav-link" data-page="ecosystem">
+<div class="aurora-nav-icon">🌐</div>
+<div>Ecosystem</div>
+<div>↗</div>
+</div>
+
+<div class="aurora-nav-link" data-page="ai">
+<div class="aurora-nav-icon">🤖</div>
+<div>AI Runtime</div>
+<div>↗</div>
+</div>
+
 </div>
 
 </div>
@@ -891,16 +1446,20 @@ placeholder="Search runtime territories...">
 <h1 class="aurora-title">
 HTML CONTROL
 <br>
-<span class="gradient">NEST</span>
+<span class="gradient">
+NEST
+</span>
 </h1>
 
 <p class="aurora-subtitle">
+
 A sovereign browser-native operational habitat
 designed to unify runtime territories,
 AI systems,
 distributed repositories,
 and modular infrastructure
 inside one deployable HTML organism.
+
 </p>
 
 <div class="aurora-grid">
@@ -925,23 +1484,63 @@ inside one deployable HTML organism.
 </section>
 
 <section class="runtime-territory" id="dashboard">
-<h1 class="aurora-title">RUNTIME<br><span class="gradient">DASHBOARD</span></h1>
+
+<h1 class="aurora-title">
+RUNTIME
+<br>
+<span class="gradient">
+DASHBOARD
+</span>
+</h1>
+
 </section>
 
 <section class="runtime-territory" id="runtime">
-<h1 class="aurora-title">RUNTIME<br><span class="gradient">INFRASTRUCTURE</span></h1>
+
+<h1 class="aurora-title">
+RUNTIME
+<br>
+<span class="gradient">
+INFRASTRUCTURE
+</span>
+</h1>
+
 </section>
 
 <section class="runtime-territory" id="modules">
-<h1 class="aurora-title">MODULAR<br><span class="gradient">EXPANSION</span></h1>
+
+<h1 class="aurora-title">
+MODULAR
+<br>
+<span class="gradient">
+EXPANSION
+</span>
+</h1>
+
 </section>
 
 <section class="runtime-territory" id="ecosystem">
-<h1 class="aurora-title">CONNECTED<br><span class="gradient">ECOSYSTEM</span></h1>
+
+<h1 class="aurora-title">
+CONNECTED
+<br>
+<span class="gradient">
+ECOSYSTEM
+</span>
+</h1>
+
 </section>
 
 <section class="runtime-territory" id="ai">
-<h1 class="aurora-title">AI<br><span class="gradient">RUNTIME</span></h1>
+
+<h1 class="aurora-title">
+AI
+<br>
+<span class="gradient">
+RUNTIME
+</span>
+</h1>
+
 </section>
 
 <footer class="aurora-footer">
@@ -1023,7 +1622,9 @@ inside one deployable HTML organism.
 
 <div class="footer-brand">
 
-<h2 id="socialTitle">Follow the signal.</h2>
+<h2 id="socialTitle">
+Follow the signal.
+</h2>
 
 <p>
 Social channels sit here so visitors can follow updates,
@@ -1213,8 +1814,8 @@ const y =
 e.clientY - rect.top;
 
 bubble.style.transform = `
-rotateY(${(x - rect.width/2)/10}deg)
-rotateX(${-(y - rect.height/2)/10}deg)
+rotateY(${(x - rect.width/2)/12}deg)
+rotateX(${-(y - rect.height/2)/12}deg)
 scale(1.08)
 `;
 
